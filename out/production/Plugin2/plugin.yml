@@ -1,0 +1,9 @@
+name: plugin2
+version: 1.0.0
+author: char321
+main: io.github.qwertyuioplkjhgfd.Plugin2
+api-version: 1.16
+
+commands:
+  test:
+  heal:
