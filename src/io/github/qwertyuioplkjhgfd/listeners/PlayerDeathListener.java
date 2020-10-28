@@ -24,7 +24,9 @@ public class PlayerDeathListener implements Listener {
 
         Bukkit.getPluginManager().registerEvents(this, plugin);
     }
-
+    /*
+    heals anyone who kills a player by 4 hearts
+     */
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent e) {
         if(e.getEntity().getKiller() instanceof Player){
@@ -44,6 +46,7 @@ public class PlayerDeathListener implements Listener {
 
         }
     }
+    /*
     @EventHandler
     public void doesThisWork(PlayerInteractEvent e) {
         Player clicker = e.getPlayer();
@@ -53,6 +56,8 @@ public class PlayerDeathListener implements Listener {
                 clicker.getWorld().spawnEntity(clicker.getLocation().add(0,1,0),EntityType.FIREBALL);
         }
     }
+     */
+    /*
     @EventHandler
     public void damage(EntityDamageEvent e) {
         if(e.getEntity() instanceof Player) {
@@ -61,6 +66,7 @@ public class PlayerDeathListener implements Listener {
             }
         }
     }
+    */
 
 
 }
