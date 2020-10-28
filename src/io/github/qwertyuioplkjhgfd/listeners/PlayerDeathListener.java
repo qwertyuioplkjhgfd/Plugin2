@@ -37,8 +37,6 @@ public class PlayerDeathListener implements Listener {
                 @Override
                 public void run() {
                     killer.setHealth(Math.min(killer.getHealth()+8, 20));
-                    killed.setSaturation(10);
-                    killed.setFoodLevel(20);
                 }
 
             }.runTaskLater(plugin,5);
